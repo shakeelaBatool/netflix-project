@@ -12,7 +12,7 @@ data= pd.read_csv(r"G:\\netflix-ml-project-main\\netflix_titles.csv")
 
 print(data.head(10))
 print(f"\n***Tail***\n{data.tail(10)}")
-print(f"\n******\n{data.isnull()}")
+print(f"\n*****8*\n{data.isnull()}")
 print(f"\n***Shape***\n{data.shape}")
 print(f"\n***Info***\n{data.info}")
 
@@ -267,4 +267,5 @@ plt.title('Actual vs Predicted Release Year')
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=2)  # Diagonal line
 
 plt.show()
+
 
