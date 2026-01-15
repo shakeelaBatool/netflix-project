@@ -36,7 +36,7 @@ data["listed_in"]
 
 
 fig=px.histogram(data,
-                 x= "title",
+                 x="title",
                  color="rating",#Change 'Location' to 'locations'
                  hover_data=data.columns,
                  title="Show's Title And Their Rating",
@@ -267,6 +267,7 @@ plt.title('Actual vs Predicted Release Year')
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=2)  # Diagonal line
 
 plt.show()
+
 
 
 
