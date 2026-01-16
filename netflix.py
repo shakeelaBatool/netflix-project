@@ -246,7 +246,7 @@ le = LabelEncoder()
 
 # Applying Label Encoding to categorical columns
 for col in categorical_cols:
-    X[col] = le.fit_transform(X[col].astype(str))  # Convert categorical values to numeric
+    X[col] =le.fit_transform(X[col].astype(str))  # Convert categorical values to numeric
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=7)
 
 # Initialize the Random Forest Regressor
@@ -267,6 +267,7 @@ plt.title('Actual vs Predicted Release Year')
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=2)  # Diagonal line
 
 plt.show()
+
 
 
 
