@@ -14,7 +14,7 @@ print(data.head(10))
 print(f"\n*****Tail****\n{data.tail(10)}")
 print(f"\n****8*\n{data.isnull()}")
 print(f"\n****Shape****\n{data.shape}")
-print(f"\n***Info***\n{data.info}")
+print(f"\n***Info****\n{data.info}")
 
 print(f"\n*** Numerical Summary***\n{data.describe()}")
 print(f"\n***Most Occured value***\n{data.rating.value_counts() }")   #displaying the most occurred rating
@@ -267,6 +267,7 @@ plt.title('Actual vs Predicted Release Year')
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=2)  # Diagonal line
 
 plt.show()
+
 
 
 
