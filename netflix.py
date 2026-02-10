@@ -21,7 +21,7 @@ print(f"\n***Most Occured value***\n{data.rating.value_counts() }")   #displayin
 top10_country =data['country'].value_counts().head(10)
 
 
-data['rating'] = data['rating'].fillna("TV-MA")
+data['rating'] =data['rating'].fillna("TV-MA")
 print("\n***Filled missing ratings***")
 print(data['rating'].head(10))
 
@@ -267,6 +267,7 @@ plt.title('Actual vs Predicted Release Year')
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=2)  # Diagonal line
 
 plt.show()
+
 
 
 
