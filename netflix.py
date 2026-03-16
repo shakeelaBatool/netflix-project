@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-data = pd.read_csv(r"G:\\netflix-ml-project-main\\netflix_titles.csv")
+data= pd.read_csv(r"G:\\netflix-ml-project-main\\netflix_titles.csv")
 
 # EXPLORATORY DATA ANALAYSIS
 
