@@ -112,7 +112,7 @@ le = LabelEncoder()
 
 # Apply Label Encoding to categorical columns
 for col in categorical_cols:
-    X[col] = le.fit_transform(X[col].astype(str))
+    X[col] =le.fit_transform(X[col].astype(str))
 
 # Now perform the train-test split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=7)
